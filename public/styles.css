@@ -1,6 +1,9 @@
 body {
+  padding:30px;
   font-size: 120%;
-  font-family: Arial;
+  font-family: sans-serif;
+  
+  
 }
 
 button, input {
@@ -17,7 +20,13 @@ td, th {
   text-align: left;
   padding: 8px;
 }
+th{
+  color: #400082;
+}
+td{
+  color:#cd4dcc;
 
+}
 tr:nth-child(even) {
   background-color: #dddddd;
 }
@@ -32,9 +41,10 @@ tr:nth-child(even) {
   text-align: center;
 }
 
-.total {
+.total{
   font-size: 150%;
   text-decoration: underline;
+  color: #400082;
 }
 
 .form {
@@ -48,4 +58,12 @@ tr:nth-child(even) {
   overflow: auto;
   width: 90%;
   margin: 0 auto;
+}
+.card{
+  margin:30px;
+  color:#cd4dcc;
+}
+#add-btn, #sub-btn{
+  padding:3px;
+  margin: 4px;
 }

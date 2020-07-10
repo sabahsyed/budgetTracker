@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#317EFB">
+  <meta name="theme-color" content="#C57391">
   <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
   <link rel="shortcut icon" href="icons/icon-512x512.png" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="manifest" href="manifest.webmanifest" />
   <title>Budget Tracker</title>
 </head>
@@ -17,15 +19,23 @@
 <body>
   <div class="wrapper">
     <div class="total">
-      <div class="total">Your total is: $<span id="total">0</span></div>
+      <div class="total">Your Current Balance : $<span id="total">0</span></div>
     </div>
 
-    <div class="form">
-      <input type="text" id="t-name" placeholder="Name of transaction" />
-      <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
-      <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
-      <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
-      <p class="error"></p>
+    <div class="card" style="width: 50rem;">
+      <div class="card-body">
+        <div class="form">
+          <label for="Transaction">Transaction:</label>
+          <input type="text" id="t-name" placeholder="Name " />
+          <br>
+          <label for="Amount">Transaction Amount:</label>
+          <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
+          <br>
+          <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
+          <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
+          <p class="error"></p>
+        </div>
+      </div>
     </div>
 
     <div class="transactions">

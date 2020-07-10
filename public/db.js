@@ -1,3 +1,5 @@
+
+
 let db;
 // create a new db request for a "budget" database.
 
@@ -68,3 +70,4 @@ function checkDatabase() {
 
 // listen for app coming back online
 window.addEventListener("online", checkDatabase);
+
